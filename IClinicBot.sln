@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{8F1903B2-8EA1-46A4-999C-6751A9FF3ED7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{15AEDFA3-28F8-49A9-91A9-7938CEBF2E7A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{9A5D51DF-ECDC-4DF8-BE86-626885A5B3A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IClinicBot.API", "IClinicBot.API\IClinicBot.API.csproj", "{1905E677-2F90-4B57-BDE6-684350F518D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IClinicBot.Domain", "IClinicBot.Domain\IClinicBot.Domain.csproj", "{C3EAC378-37DF-4C88-905B-BD0D5A678326}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IClinicBot.Infra.SqlServer", "IClinicBot.Infra.SqlServer\IClinicBot.Infra.SqlServer.csproj", "{D44FF886-3091-4707-A5B5-440EF19D8068}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1905E677-2F90-4B57-BDE6-684350F518D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1905E677-2F90-4B57-BDE6-684350F518D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1905E677-2F90-4B57-BDE6-684350F518D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1905E677-2F90-4B57-BDE6-684350F518D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3EAC378-37DF-4C88-905B-BD0D5A678326}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3EAC378-37DF-4C88-905B-BD0D5A678326}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3EAC378-37DF-4C88-905B-BD0D5A678326}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3EAC378-37DF-4C88-905B-BD0D5A678326}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D44FF886-3091-4707-A5B5-440EF19D8068}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D44FF886-3091-4707-A5B5-440EF19D8068}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D44FF886-3091-4707-A5B5-440EF19D8068}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D44FF886-3091-4707-A5B5-440EF19D8068}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1905E677-2F90-4B57-BDE6-684350F518D8} = {15AEDFA3-28F8-49A9-91A9-7938CEBF2E7A}
+		{C3EAC378-37DF-4C88-905B-BD0D5A678326} = {8F1903B2-8EA1-46A4-999C-6751A9FF3ED7}
+		{D44FF886-3091-4707-A5B5-440EF19D8068} = {9A5D51DF-ECDC-4DF8-BE86-626885A5B3A6}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BC305526-6AA1-498F-B991-7D4871082A81}
+	EndGlobalSection
+EndGlobal
