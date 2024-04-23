@@ -66,5 +66,7 @@ namespace IClinicBot.Infra.SqlServer
         public DbSet<ConsultaPresencial> ConsultasPresencial { get; set; }
         public DbSet<Endereco> Enderecos { get; set; }
         public DbSet<MedicoConsulta> MedicoConsultas { get; set; }
+        public DbSet<Exame> Exames { get; set; }
+        public DbSet<MedicoExame> MedicoExames { get; set; }
     }
 }

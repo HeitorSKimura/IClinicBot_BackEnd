@@ -18,4 +18,8 @@
     <ProjectReference Include="..\IClinicBot.Domain\IClinicBot.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
+  </ItemGroup>
+
 </Project>
