@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IClinicBot.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e5a42e131315c39ac1f88ee0bb23e890bec81c25")]
 [assembly: System.Reflection.AssemblyProductAttribute("IClinicBot.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IClinicBot.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

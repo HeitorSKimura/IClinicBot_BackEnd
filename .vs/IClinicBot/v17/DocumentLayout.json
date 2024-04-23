@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "E:\\Meus Documentos\\\u00C1rea de Trabalho\\Projetos\\C#\\IClinicBot\\IClinicBot\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1905E677-2F90-4B57-BDE6-684350F518D8}|IClinicBot.API\\IClinicBot.API.csproj|e:\\meus documentos\\\u00E1rea de trabalho\\projetos\\c#\\iclinicbot\\iclinicbot\\iclinicbot.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1905E677-2F90-4B57-BDE6-684350F518D8}|IClinicBot.API\\IClinicBot.API.csproj|solutionrelative:iclinicbot.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D44FF886-3091-4707-A5B5-440EF19D8068}|IClinicBot.Infra.SqlServer\\IClinicBot.Infra.SqlServer.csproj|e:\\meus documentos\\\u00E1rea de trabalho\\projetos\\c#\\iclinicbot\\iclinicbot\\iclinicbot.infra.sqlserver\\sqlservercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D44FF886-3091-4707-A5B5-440EF19D8068}|IClinicBot.Infra.SqlServer\\IClinicBot.Infra.SqlServer.csproj|solutionrelative:iclinicbot.infra.sqlserver\\sqlservercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\Meus Documentos\\\u00C1rea de Trabalho\\Projetos\\C#\\IClinicBot\\IClinicBot\\IClinicBot.API\\Program.cs",
-              "RelativeDocumentMoniker": "IClinicBot.API\\Program.cs",
-              "ToolTip": "E:\\Meus Documentos\\\u00C1rea de Trabalho\\Projetos\\C#\\IClinicBot\\IClinicBot\\IClinicBot.API\\Program.cs",
-              "RelativeToolTip": "IClinicBot.API\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "SqlServerContext.cs",
+              "DocumentMoniker": "E:\\Meus Documentos\\\u00C1rea de Trabalho\\Projetos\\C#\\IClinicBot\\IClinicBot\\IClinicBot.Infra.SqlServer\\SqlServerContext.cs",
+              "RelativeDocumentMoniker": "IClinicBot.Infra.SqlServer\\SqlServerContext.cs",
+              "ToolTip": "E:\\Meus Documentos\\\u00C1rea de Trabalho\\Projetos\\C#\\IClinicBot\\IClinicBot\\IClinicBot.Infra.SqlServer\\SqlServerContext.cs",
+              "RelativeToolTip": "IClinicBot.Infra.SqlServer\\SqlServerContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-16T14:44:17.541Z",
+              "WhenOpened": "2024-04-23T12:09:36.685Z",
               "EditorCaption": ""
             },
             {
