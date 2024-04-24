@@ -1,5 +1,6 @@
 ﻿using IClinicBot.Domain.CadastroContext;
 using IClinicBot.Domain.ViewModel.CadastroContextViewModel;
+using IClinicBot.Infra.SqlServer.Interfaces.IRepositoryCadastroContext;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace IClinicBot.Infra.SqlServer.Repositories.RepositoryCadastroContext
 {
-    public class RepositoryMedico
+    public class RepositoryMedico : IRepositoryMedico
     {
         private readonly SqlServerContext _context;
 

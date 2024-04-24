@@ -1,4 +1,5 @@
 ﻿using IClinicBot.Domain.ConsultaContext;
+using IClinicBot.Infra.SqlServer.Interfaces.IRepositoryConsultaContext;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace IClinicBot.Infra.SqlServer.Repositories.RepositoryConsultaContext
 {
-    public class RepositoryMedicoExame
+    public class RepositoryMedicoExame : IRepositoryMedicoExame
     {
         private readonly SqlServerContext _context;
 
