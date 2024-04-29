@@ -1,11 +1,4 @@
-using IClinicBot.Infra.SqlServer.Interfaces.IRepositoryCadastroContext;
-
 var builder = WebApplication.CreateBuilder(args);
-
-// Injection Of Controll
-
-// CadastroContext
-builder.Services.AddScoped<IRepositoryMedico>();
 
 // Add services to the container.
 
