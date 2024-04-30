@@ -16,7 +16,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <Folder Include="Controllers\ControllerCadastroContext\" />
+    <Folder Include="Controllers\ControllerConsultaContext\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IClinicBot.Infra.SqlServer\IClinicBot.Infra.SqlServer.csproj" />
   </ItemGroup>
 
 </Project>
