@@ -9,11 +9,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{9A5D51DF-ECDC-4DF8-BE86-626885A5B3A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IClinicBot.API", "IClinicBot.API\IClinicBot.API.csproj", "{1905E677-2F90-4B57-BDE6-684350F518D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IClinicBot.Application.API", "IClinicBot.API\IClinicBot.Application.API.csproj", "{1905E677-2F90-4B57-BDE6-684350F518D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IClinicBot.Domain", "IClinicBot.Domain\IClinicBot.Domain.csproj", "{C3EAC378-37DF-4C88-905B-BD0D5A678326}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IClinicBot.Domain", "IClinicBot.Domain\IClinicBot.Domain.csproj", "{C3EAC378-37DF-4C88-905B-BD0D5A678326}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IClinicBot.Infra.SqlServer", "IClinicBot.Infra.SqlServer\IClinicBot.Infra.SqlServer.csproj", "{D44FF886-3091-4707-A5B5-440EF19D8068}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IClinicBot.Infra.SqlServer", "IClinicBot.Infra.SqlServer\IClinicBot.Infra.SqlServer.csproj", "{D44FF886-3091-4707-A5B5-440EF19D8068}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
