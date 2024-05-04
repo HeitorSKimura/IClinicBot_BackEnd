@@ -10,7 +10,7 @@ namespace IClinicBot.Domain.ConsultaContext
     public class Endereco
     {
         [Key]
-        public string idEndereco {  get; set; }
+        public int idEndereco {  get; set; }
         public string CEP { get; set; }
         public string Logradouro { get; set; }
         public string Complemento { get; set; }
