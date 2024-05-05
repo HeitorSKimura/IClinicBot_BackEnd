@@ -20,6 +20,11 @@ namespace IClinicBot.Infra.SqlServer
         {
             modelBuilder.Entity<User>().UseTpcMappingStrategy();
 
+            // ENUM Consulta
+            modelBuilder.Entity<Consulta>()
+                .Property(c => c.Tipo)
+                .HasConversion<int>();
+
             // Endereco --> Consulta        -- Um para Muitos
             modelBuilder.Entity<Endereco>()
                 .HasMany(e => e.Consultas)
