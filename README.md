@@ -7,9 +7,8 @@
 Visual Studio - https://visualstudio.microsoft.com/pt-br/downloads/ (Comunidade)
 <br/>
 SDK 8 - https://dotnet.microsoft.com/pt-br/download/dotnet/8.0
-> [!NOTE]
-> Atualizar o Visual Studio
-> SDK 8.0.100 --> Visual Studio 17.8 / SDK 8.0.200 --> Visual Studio 17.8
+> [!IMPORTANT]
+> SDK 8.0.100 --> Visual Studio 17.7 / SDK 8.0.200 --> Visual Studio 17.8
 
 ### Items Necessários Para o Visual Studio:
 - ASP.NET e Desenvolvimento WEB
