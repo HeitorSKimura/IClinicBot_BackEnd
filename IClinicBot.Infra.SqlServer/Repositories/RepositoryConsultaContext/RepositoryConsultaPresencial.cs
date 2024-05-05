@@ -30,7 +30,8 @@ namespace IClinicBot.Infra.SqlServer.Repositories.RepositoryConsultaContext
                 DataConsulta = consultaPresencial.DataConsulta,
                 idEndereco = consultaPresencial.idEndereco,
                 idPaciente = consultaPresencial.idPaciente,
-                Descricao = consultaPresencial.Descricao
+                Descricao = consultaPresencial.Descricao,
+                Tipo = consultaPresencial.Tipo,
             };
             _context.ConsultasPresencial.Add(consultaRepository);
             _context.SaveChanges();
