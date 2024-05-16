@@ -20,9 +20,14 @@ namespace IClinicBot.Infra.SqlServer
         {
             modelBuilder.Entity<User>().UseTpcMappingStrategy();
 
-            // ENUM Consulta
+            // ENUM Consulta -> TipoConsulta
             modelBuilder.Entity<Consulta>()
                 .Property(c => c.Tipo)
+                .HasConversion<int>();
+
+            // ENUM Agenda -> StatusAgenda
+            modelBuilder.Entity<Agenda>()
+                .Property(c => c.Status)
                 .HasConversion<int>();
 
             // Endereco --> Consulta        -- Um para Muitos
@@ -58,6 +63,19 @@ namespace IClinicBot.Infra.SqlServer
                 .WithMany(e => e.Medicos)
                 .UsingEntity<MedicoExame>();
 
+            // Medico --> Agenda            -- Um para Muitos
+            modelBuilder.Entity<Medico>()
+                .HasMany(e => e.Agendas)
+                .WithOne(e => e.Medico)
+                .HasForeignKey(e => e.idMedico)
+                .IsRequired();
+
+            // Consulta --> Agenda          -- Um Para Muitos
+            modelBuilder.Entity<Consulta>()
+                .HasMany(e => e.Agendas)
+                .WithOne(e => e.Consulta)
+                .HasForeignKey(e => e.idConsulta)
+                .IsRequired(false);
         }
 
         // CadastroContext
@@ -73,5 +91,6 @@ namespace IClinicBot.Infra.SqlServer
         public DbSet<MedicoConsulta> MedicoConsultas { get; set; }
         public DbSet<Exame> Exames { get; set; }
         public DbSet<MedicoExame> MedicoExames { get; set; }
+        public DbSet<Agenda> Agendas { get; set; }
     }
 }

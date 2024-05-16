@@ -27,7 +27,6 @@ namespace IClinicBot.Infra.SqlServer.Repositories.RepositoryConsultaContext
         {
             var consultaRepository = new ConsultaChatBot
             {
-                DataConsulta = consultaChatBot.DataConsulta,
                 idEndereco = consultaChatBot.idEndereco,
                 idPaciente = consultaChatBot.idPaciente,
                 Conversa = consultaChatBot.Conversa,

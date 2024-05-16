@@ -15,5 +15,7 @@ namespace IClinicBot.Domain.CadastroContext
         public IList<Consulta> Consultas { get; set; }
 
         public IList<Exame> Exames { get; set; }
+
+        public IList<Agenda> Agendas { get; set; }
     }
 }
