@@ -19,6 +19,8 @@ namespace IClinicBot.Infra.SqlServer
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<User>().UseTpcMappingStrategy();
+            
+            // ------------------------------- Properties ENUM
 
             // ENUM Consulta -> TipoConsulta
             modelBuilder.Entity<Consulta>()
@@ -30,12 +32,24 @@ namespace IClinicBot.Infra.SqlServer
                 .Property(c => c.Status)
                 .HasConversion<int>();
 
+            // ENUM Pagamento -> TipoPagamento
+            modelBuilder.Entity<Pagamento>()
+                .Property(c => c.Tipo)
+                .HasConversion<int>();
+
+            // ENUM Pagamento -> StatusPagamento
+            modelBuilder.Entity<Pagamento>()
+                .Property(c => c.Status)
+                .HasConversion<int>();
+
+            // ------------------------------- Class Relationships
+
             // Endereco --> Consulta        -- Um para Muitos
             modelBuilder.Entity<Endereco>()
                 .HasMany(e => e.Consultas)
                 .WithOne(e => e.Endereco)
                 .HasForeignKey(e => e.idEndereco)
-                .IsRequired();
+                .IsRequired(false);
 
             // Paciente --> Consulta        -- Um para Muitos
             modelBuilder.Entity<Paciente>()
@@ -76,12 +90,29 @@ namespace IClinicBot.Infra.SqlServer
                 .WithOne(e => e.Consulta)
                 .HasForeignKey(e => e.idConsulta)
                 .IsRequired(false);
+
+            // Especialidade --> Medico     -- Muitos Para Muitos
+            modelBuilder.Entity<Especialidade>()
+                .HasMany(e => e.Medicos)
+                .WithMany(e => e.Especialidades)
+                .UsingEntity<MedicoEspecialidade>();
+
+            // Consulta --> Pagamento       -- Um Para Muitos
+            modelBuilder.Entity<Consulta>()
+                .HasMany(e => e.Pagamentos)
+                .WithOne(e => e.Consulta)
+                .HasForeignKey(e => e.idConsulta)
+                .IsRequired();
+
+            // base.OnModelCreating(modelBuilder);
         }
 
         // CadastroContext
         public DbSet<User> Users { get; set; }
         public DbSet<Medico> Medicos { get; set; }
         public DbSet<Paciente> Pacientes { get; set; }
+        public DbSet<Especialidade> Especialidades { get; set; }
+        public DbSet<MedicoEspecialidade> MedicoEspecialidades { get; set; }
 
         // ConsultaContext
         public DbSet<Consulta> Consultas { get; set; }
@@ -92,5 +123,6 @@ namespace IClinicBot.Infra.SqlServer
         public DbSet<Exame> Exames { get; set; }
         public DbSet<MedicoExame> MedicoExames { get; set; }
         public DbSet<Agenda> Agendas { get; set; }
+        public DbSet<Pagamento> Pagamentos { get; set; }
     }
 }

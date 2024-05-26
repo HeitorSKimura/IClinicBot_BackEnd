@@ -15,6 +15,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IClinicBot.Domain", "IClini
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IClinicBot.Infra.SqlServer", "IClinicBot.Infra.SqlServer\IClinicBot.Infra.SqlServer.csproj", "{D44FF886-3091-4707-A5B5-440EF19D8068}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IClinicBot.Application.API.Service", "IClinicBot.Application.API.Service\IClinicBot.Application.API.Service.csproj", "{59C55D8B-0519-4BB8-8A87-08172037AF91}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IClinicBot.Domain.Service", "IClinicBot.Domain.Service\IClinicBot.Domain.Service.csproj", "{8D5ABD33-C621-4256-AF63-CCB08C548296}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{D44FF886-3091-4707-A5B5-440EF19D8068}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D44FF886-3091-4707-A5B5-440EF19D8068}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D44FF886-3091-4707-A5B5-440EF19D8068}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59C55D8B-0519-4BB8-8A87-08172037AF91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59C55D8B-0519-4BB8-8A87-08172037AF91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59C55D8B-0519-4BB8-8A87-08172037AF91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59C55D8B-0519-4BB8-8A87-08172037AF91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D5ABD33-C621-4256-AF63-CCB08C548296}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D5ABD33-C621-4256-AF63-CCB08C548296}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D5ABD33-C621-4256-AF63-CCB08C548296}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D5ABD33-C621-4256-AF63-CCB08C548296}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,6 +53,8 @@ Global
 		{1905E677-2F90-4B57-BDE6-684350F518D8} = {15AEDFA3-28F8-49A9-91A9-7938CEBF2E7A}
 		{C3EAC378-37DF-4C88-905B-BD0D5A678326} = {8F1903B2-8EA1-46A4-999C-6751A9FF3ED7}
 		{D44FF886-3091-4707-A5B5-440EF19D8068} = {9A5D51DF-ECDC-4DF8-BE86-626885A5B3A6}
+		{59C55D8B-0519-4BB8-8A87-08172037AF91} = {15AEDFA3-28F8-49A9-91A9-7938CEBF2E7A}
+		{8D5ABD33-C621-4256-AF63-CCB08C548296} = {8F1903B2-8EA1-46A4-999C-6751A9FF3ED7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BC305526-6AA1-498F-B991-7D4871082A81}

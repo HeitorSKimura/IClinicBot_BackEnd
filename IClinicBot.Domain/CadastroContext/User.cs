@@ -12,9 +12,10 @@ namespace IClinicBot.Domain.CadastroContext
         [Key]
         public int idCadastro { get; set; }
         public string NomeCompleto { get; set; }
-        public string CPF { get; set; }
-        public string Email { get; set; }
-        public string Senha { get; set; }
+        public string? CPF { get; set; }
+        public string? Email { get; set; }
+        public string? Senha { get; set; }
+        public string Telefone { get; set; }
         public DateTime RegistroCadastro { get; set; }
     }
 }

@@ -12,5 +12,6 @@ namespace IClinicBot.Domain.ViewModel.ViewModelCadastroContext
         public string CPF { get; set; }
         public string Email { get; set; }
         public string Senha { get; set; }
+        public string Telefone { get; set; }
     }
 }

@@ -31,6 +31,7 @@ namespace IClinicBot.Infra.SqlServer.Repositories.RepositoryConsultaContext
                 idPaciente = consultaChatBot.idPaciente,
                 Conversa = consultaChatBot.Conversa,
                 Tipo = consultaChatBot.Tipo,
+                DataConsulta = consultaChatBot.DataConsulta,
             };
             _context.ConsultasChatBot.Add(consultaRepository);
             _context.SaveChanges();

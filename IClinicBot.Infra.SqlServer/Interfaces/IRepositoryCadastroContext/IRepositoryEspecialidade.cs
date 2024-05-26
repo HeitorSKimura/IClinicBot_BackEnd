@@ -8,10 +8,9 @@ using System.Threading.Tasks;
 
 namespace IClinicBot.Infra.SqlServer.Interfaces.IRepositoryCadastroContext
 {
-    public interface IRepositoryPaciente
+    public interface IRepositoryEspecialidade
     {
-        public List<Paciente> GetAllPaciente();
-        public Paciente PostPaciente(ViewModelPaciente paciente);
-        public Paciente FindPacienteByTelefone(string telefone);
+        public List<Especialidade> GetAllEspecialidade();
+        public Especialidade PostEspecialidade(ViewModelEspecialidade especialidade);
     }
 }

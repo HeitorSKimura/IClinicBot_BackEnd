@@ -10,6 +10,8 @@ var builder = WebApplication.CreateBuilder(args);
 // CadastroContext
 builder.Services.AddScoped<IRepositoryMedico, RepositoryMedico>();
 builder.Services.AddScoped<IRepositoryPaciente, RepositoryPaciente>();
+builder.Services.AddScoped<IRepositoryEspecialidade, RepositoryEspecialidade>();
+builder.Services.AddScoped<IRepositoryMedicoEspecialidade, RepositoryMedicoEspecialidade>();
 // ConsultaContext
 builder.Services.AddScoped<IRepositoryConsulta, RepositoryConsulta>();
 builder.Services.AddScoped<IRepositoryConsultaChatBot, RepositoryConsultaChatBot>();
@@ -19,6 +21,7 @@ builder.Services.AddScoped<IRepositoryExame, RepositoryExame>();
 builder.Services.AddScoped<IRepositoryMedicoConsulta, RepositoryMedicoConsulta>();
 builder.Services.AddScoped<IRepositoryMedicoExame, RepositoryMedicoExame>();
 builder.Services.AddScoped<IRepositoryAgenda, RepositoryAgenda>();
+builder.Services.AddScoped<IRepositoryPagamento, RepositoryPagamento>();
 // SqlContext
 builder.Services.AddScoped<SqlServerContext, SqlServerContext>();
 

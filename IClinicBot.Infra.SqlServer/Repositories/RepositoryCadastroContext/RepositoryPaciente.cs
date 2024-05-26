@@ -31,6 +31,7 @@ namespace IClinicBot.Infra.SqlServer.Repositories.RepositoryCadastroContext
                 CPF = paciente.CPF,
                 Email = paciente.Email,
                 Senha = paciente.Senha,
+                Telefone = paciente.Telefone,
                 Peso = paciente.Peso,
                 Idade = paciente.Idade,
                 Tamanho = paciente.Tamanho,
@@ -38,6 +39,12 @@ namespace IClinicBot.Infra.SqlServer.Repositories.RepositoryCadastroContext
             _context.Pacientes.Add(pacienteRepository);
             _context.SaveChanges();
             return pacienteRepository;
+        }
+
+        public Paciente FindPacienteByTelefone(string telefone)
+        {
+            var user = _context.Pacientes.FirstOrDefault(i => i.Telefone == telefone);
+            return user;
         }
     }
 }
