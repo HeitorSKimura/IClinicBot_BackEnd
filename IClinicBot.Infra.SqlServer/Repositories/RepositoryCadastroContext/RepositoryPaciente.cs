@@ -23,22 +23,11 @@ namespace IClinicBot.Infra.SqlServer.Repositories.RepositoryCadastroContext
             return _context.Pacientes.ToList();
         }
 
-        public Paciente PostPaciente(ViewModelPaciente paciente)
+        public int PostPaciente(Paciente paciente)
         {
-            var pacienteRepository = new Paciente
-            {
-                NomeCompleto = paciente.NomeCompleto,
-                CPF = paciente.CPF,
-                Email = paciente.Email,
-                Senha = paciente.Senha,
-                Telefone = paciente.Telefone,
-                Peso = paciente.Peso,
-                Idade = paciente.Idade,
-                Tamanho = paciente.Tamanho,
-            };
-            _context.Pacientes.Add(pacienteRepository);
-            _context.SaveChanges();
-            return pacienteRepository;
+            _context.Pacientes.Add(paciente);
+            var id = _context.SaveChanges();
+            return id;
         }
 
         public Paciente FindPacienteByTelefone(string telefone)

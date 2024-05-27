@@ -11,7 +11,7 @@ namespace IClinicBot.Infra.SqlServer.Interfaces.IRepositoryCadastroContext
     public interface IRepositoryPaciente
     {
         public List<Paciente> GetAllPaciente();
-        public Paciente PostPaciente(ViewModelPaciente paciente);
+        public int PostPaciente(Paciente paciente);
         public Paciente FindPacienteByTelefone(string telefone);
     }
 }

@@ -11,6 +11,6 @@ namespace IClinicBot.Infra.SqlServer.Interfaces.IRepositoryConsultaContext
     public interface IRepositoryConsultaPresencial
     {
         public List<ConsultaPresencial> GetAllConsultaPresencial();
-        public ConsultaPresencial PostConsultaPresencial(ViewModelConsultaPresencial consultaPresencial);
+        public ConsultaPresencial PostConsultaPresencial(ConsultaPresencial consultaPresencial);
     }
 }

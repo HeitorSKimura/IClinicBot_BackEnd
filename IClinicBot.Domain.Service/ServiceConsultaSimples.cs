@@ -1,4 +1,5 @@
 ﻿using IClinicBot.Domain.CadastroContext;
+using IClinicBot.Domain.ConsultaContext;
 using IClinicBot.Domain.ViewModel.ViewModelCadastroContext;
 using IClinicBot.Domain.ViewModel.ViewModelConsultaContext;
 using IClinicBot.Infra.SqlServer.Interfaces.IRepositoryCadastroContext;
@@ -29,21 +30,29 @@ namespace IClinicBot.Domain.Service
             var user = _paciente.FindPacienteByTelefone(telefone);
             if (user == null)
             {
-                var newUser = new ViewModelPaciente
+                user = new Paciente
                 {
                     NomeCompleto = nome,
+                    CPF = default,
+                    Email = default,
+                    Senha = default,
                     Telefone = telefone,
-                    Idade = idade
+                    Peso = default,
+                    Idade = idade,
+                    Tamanho = default,
                 };
-                _paciente.PostPaciente(newUser);
+                user.idCadastro = _paciente.PostPaciente(user);
             }
 
-            var novaConsulta = new ViewModelConsultaPresencial
+            var consultaRepository = new ConsultaPresencial
             {
                 idPaciente = user.idCadastro,
+                Descricao = "consultaPresencial.Descricao",
                 Tipo = 0,
+                DataConsulta = data,
             };
-            _consultaPresencial.PostConsultaPresencial(novaConsulta);
+
+            _consultaPresencial.PostConsultaPresencial(consultaRepository);
 
             return true;
         }

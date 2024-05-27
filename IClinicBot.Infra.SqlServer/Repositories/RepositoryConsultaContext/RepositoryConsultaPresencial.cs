@@ -23,19 +23,12 @@ namespace IClinicBot.Infra.SqlServer.Repositories.RepositoryConsultaContext
             return _context.ConsultasPresencial.ToList();
         }
 
-        public ConsultaPresencial PostConsultaPresencial(ViewModelConsultaPresencial consultaPresencial)
+        public ConsultaPresencial PostConsultaPresencial(ConsultaPresencial consultaPresencial)
         {
-            var consultaRepository = new ConsultaPresencial
-            {
-                idEndereco = consultaPresencial.idEndereco,
-                idPaciente = consultaPresencial.idPaciente,
-                Descricao = consultaPresencial.Descricao,
-                Tipo = consultaPresencial.Tipo,
-                DataConsulta = consultaPresencial.DataConsulta,
-            };
-            _context.ConsultasPresencial.Add(consultaRepository);
+
+            _context.ConsultasPresencial.Add(consultaPresencial);
             _context.SaveChanges();
-            return consultaRepository;
+            return consultaPresencial;
         }
     }
 }
