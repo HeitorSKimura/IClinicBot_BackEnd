@@ -45,6 +45,7 @@ namespace IClinicBot.Domain.Service
             };
             _consultaPresencial.PostConsultaPresencial(novaConsulta);
 
+            return true;
         }
     }
 }

@@ -19,7 +19,7 @@ namespace IClinicBot.Domain.ConsultaContext
         [Key]
         public int idConsulta { get; set; }
         public TipoConsulta Tipo { get; set; }
-        public DateTime RegistroConsulta { get; set; }
+        public DateTime DataConsulta { get; set; }
         // https://medium.com/agilix/entity-framework-core-enums-ee0f8f4063f2
 
         // Ligações:
