@@ -1,4 +1,6 @@
 # IClinicBot
+### -> [**Confira Tambem o Front-End**](https://github.com/VictorMMontanari/IClinicBot.git)
+### -> [**Confira Tambem o Chat-Bot**](https://github.com/FERNANDO-MATSUHASHI/IClinicBot-ChatBot.git)
 
 ## Descrição:
 Nosso Software tem como foco agilizar o atendimento em áreas da Saúde Hospitar e de Clinicas. 
@@ -41,5 +43,3 @@ SQL Server -> localdb -> Banco de Dados do Sistema -> IClinicBot -> Tabelas
 
 # Atenção:
 ## Não esqueça de apagar a Migration em (Infra.SqlServer) e apagar o Banco de Dados Local em (Exibir -> Pesquisador de Projetos do SQL Server) após apagar os seguintes campos retomar os comandos do campo 02
-
-### [**Confira Tambem o Front-End**](https://github.com/VictorMMontanari/IClinicBot.git)
