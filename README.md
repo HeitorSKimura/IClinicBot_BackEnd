@@ -1,7 +1,10 @@
 # IClinicBot
 
 ## Descrição:
-......
+Nosso Software tem como foco agilizar o atendimento em áreas da Saúde Hospitar e de Clinicas. 
+
+## Diagrama UML - Class
+![Alt text](https://github.com/HeitorSKimura/IClinicBot_BackEnd/blob/main/IClinicBot_UML_Class.png)
 
 ## Aplicativos Necessários:
 Visual Studio - https://visualstudio.microsoft.com/pt-br/downloads/ (Comunidade)
