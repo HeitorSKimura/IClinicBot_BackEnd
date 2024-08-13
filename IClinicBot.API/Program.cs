@@ -19,6 +19,8 @@ builder.Services.AddScoped<IRepositoryExame, RepositoryExame>();
 builder.Services.AddScoped<IRepositoryMedicoConsulta, RepositoryMedicoConsulta>();
 builder.Services.AddScoped<IRepositoryMedicoExame, RepositoryMedicoExame>();
 builder.Services.AddScoped<IRepositoryAgenda, RepositoryAgenda>();
+builder.Services.AddScoped<IRepositoryAgendaChatBot, RepositoryAgendaChatBot>();
+builder.Services.AddScoped<IRepositoryAgendaMedico, RepositoryAgendaMedico>();
 // SqlContext
 builder.Services.AddScoped<SqlServerContext, SqlServerContext>();
 

@@ -76,6 +76,19 @@ namespace IClinicBot.Infra.SqlServer
                 .WithOne(e => e.Consulta)
                 .HasForeignKey(e => e.idConsulta)
                 .IsRequired(false);
+
+            // Consulta --> AgendaMedico          -- Um Para Muitos
+            modelBuilder.Entity<Medico>()
+                .HasMany(e => e.AgendasMedico)
+                .WithOne(e => e.Medico)
+                .HasForeignKey(e => e.idMedico)
+                .IsRequired();
+
+            modelBuilder.Entity<AgendaChatBot>()
+                .HasKey(a => a.idAgendaChatBot);
+
+            modelBuilder.Entity<AgendaMedico>()
+                .HasKey(a => a.idAgendaMedico);
         }
 
         // CadastroContext
@@ -92,5 +105,7 @@ namespace IClinicBot.Infra.SqlServer
         public DbSet<Exame> Exames { get; set; }
         public DbSet<MedicoExame> MedicoExames { get; set; }
         public DbSet<Agenda> Agendas { get; set; }
+        public DbSet<AgendaChatBot> AgendasChatBot { get; set; }
+        public DbSet<AgendaMedico> AgendasMedico { get; set; }
     }
 }
