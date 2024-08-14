@@ -1,5 +1,6 @@
 ﻿using IClinicBot.Domain.CadastroContext;
 using IClinicBot.Domain.ConsultaContext;
+using IClinicBot.Domain.Entidades.CadastroContext;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -95,6 +96,7 @@ namespace IClinicBot.Infra.SqlServer
         public DbSet<User> Users { get; set; }
         public DbSet<Medico> Medicos { get; set; }
         public DbSet<Paciente> Pacientes { get; set; }
+        public DbSet<Contato> Contatos { get; set; }
 
         // ConsultaContext
         public DbSet<Consulta> Consultas { get; set; }

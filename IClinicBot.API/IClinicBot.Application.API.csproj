@@ -16,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\IClinicBot.Domain\IClinicBot.Domain.csproj" />
     <ProjectReference Include="..\IClinicBot.Infra.SqlServer\IClinicBot.Infra.SqlServer.csproj" />
   </ItemGroup>
 

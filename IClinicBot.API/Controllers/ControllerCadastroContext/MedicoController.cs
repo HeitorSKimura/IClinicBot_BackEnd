@@ -1,9 +1,7 @@
 ﻿using IClinicBot.Domain.CadastroContext;
 using IClinicBot.Domain.ViewModel.CadastroContextViewModel;
 using IClinicBot.Infra.SqlServer.Interfaces.IRepositoryCadastroContext;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System.Drawing;
 
 namespace IClinicBot.Application.API.Controllers.ControllerCadastroContext
 {

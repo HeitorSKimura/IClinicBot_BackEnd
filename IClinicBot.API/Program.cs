@@ -1,3 +1,5 @@
+using IClinicBot.Application.API.Services.ControllerCadastroContext;
+using IClinicBot.Domain.Interfaces.IServicesCadastroContext;
 using IClinicBot.Infra.SqlServer;
 using IClinicBot.Infra.SqlServer.Interfaces.IRepositoryCadastroContext;
 using IClinicBot.Infra.SqlServer.Interfaces.IRepositoryConsultaContext;
@@ -7,9 +9,13 @@ using IClinicBot.Infra.SqlServer.Repositories.RepositoryConsultaContext;
 var builder = WebApplication.CreateBuilder(args);
 
 // Injection Of Controll
+//Services
+builder.Services.AddScoped<IServiceContato, ServiceContato>();
+
 // CadastroContext
 builder.Services.AddScoped<IRepositoryMedico, RepositoryMedico>();
 builder.Services.AddScoped<IRepositoryPaciente, RepositoryPaciente>();
+builder.Services.AddScoped<IRepositoryContato, RepositoryContato>();
 // ConsultaContext
 builder.Services.AddScoped<IRepositoryConsulta, RepositoryConsulta>();
 builder.Services.AddScoped<IRepositoryConsultaChatBot, RepositoryConsultaChatBot>();

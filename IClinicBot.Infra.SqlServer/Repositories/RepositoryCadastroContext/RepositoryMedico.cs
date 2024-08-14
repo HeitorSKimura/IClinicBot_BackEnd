@@ -33,6 +33,7 @@ namespace IClinicBot.Infra.SqlServer.Repositories.RepositoryCadastroContext
                 Senha = medico.Senha,
                 CRM = medico.CRM,
             };
+
             _context.Medicos.Add(medicoRepository);
             _context.SaveChanges();
             return medicoRepository;

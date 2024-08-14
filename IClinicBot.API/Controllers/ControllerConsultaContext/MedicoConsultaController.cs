@@ -1,6 +1,5 @@
 ﻿using IClinicBot.Domain.ConsultaContext;
 using IClinicBot.Infra.SqlServer.Interfaces.IRepositoryConsultaContext;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace IClinicBot.Application.API.Controllers.ControllerConsultaContext

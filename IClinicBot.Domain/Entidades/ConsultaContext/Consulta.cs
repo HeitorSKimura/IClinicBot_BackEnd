@@ -1,10 +1,5 @@
 ﻿using IClinicBot.Domain.CadastroContext;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace IClinicBot.Domain.ConsultaContext
 {
@@ -20,7 +15,6 @@ namespace IClinicBot.Domain.ConsultaContext
         public int idConsulta { get; set; }
         public DateTime RegistroConsulta { get; set; }
         public TipoConsulta Tipo {  get; set; }
-        // https://medium.com/agilix/entity-framework-core-enums-ee0f8f4063f2
 
         // Ligações:
         public int idEndereco { get; set; }
