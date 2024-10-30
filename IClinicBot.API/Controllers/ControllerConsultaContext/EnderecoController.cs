@@ -1,12 +1,14 @@
 ﻿using IClinicBot.Domain.ConsultaContext;
 using IClinicBot.Domain.ViewModel.ViewModelConsultaContext;
 using IClinicBot.Infra.SqlServer.Interfaces.IRepositoryConsultaContext;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace IClinicBot.Application.API.Controllers.ControllerConsultaContext
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class EnderecoController : ControllerBase
     {
         readonly IRepositoryEndereco _repositoryEndereco;

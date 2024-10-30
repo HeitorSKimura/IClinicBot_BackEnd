@@ -25,6 +25,9 @@ namespace IClinicBot.Application.API.Controllers.ControllerCadastroContext
         [HttpPost]
         public ActionResult<Medico> Post(ViewModelMedico medico)
         {
+            if (medico.SenhaParaCadastrar != "IClinicBot")
+                return BadRequest();
+
             var retorno = _repositoryMedico.PostMedico(medico);
             return Ok(retorno);
         }

@@ -34,6 +34,7 @@ namespace IClinicBot.Infra.SqlServer.Repositories.RepositoryCadastroContext
                 Peso = paciente.Peso,
                 Idade = paciente.Idade,
                 Tamanho = paciente.Tamanho,
+                Role = "paciente",
             };
             _context.Pacientes.Add(pacienteRepository);
             _context.SaveChanges();
