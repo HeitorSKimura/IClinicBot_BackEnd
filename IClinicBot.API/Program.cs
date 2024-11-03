@@ -61,7 +61,8 @@ builder.Services.AddScoped<IRepositoryAgendaChatBot, RepositoryAgendaChatBot>();
 builder.Services.AddScoped<IRepositoryAgendaMedico, RepositoryAgendaMedico>();
 // SqlContext
 builder.Services.AddScoped<SqlServerContext, SqlServerContext>();
-
+builder.Services.AddScoped<ITokenBuilder, TokenBuilder>();
+builder.Services.AddScoped<ITokenService, TokenService>();
 // Add services to the container.
 
 builder.Services.AddControllers();
