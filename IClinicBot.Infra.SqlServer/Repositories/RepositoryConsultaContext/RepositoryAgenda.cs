@@ -18,6 +18,11 @@ namespace IClinicBot.Infra.SqlServer.Repositories.RepositoryConsultaContext
             return _context.Agendas.ToList();
         }
 
+        public Agenda? GetbyIdAgenda(int id)
+        {
+            return _context.Agendas.Find(id);
+        }
+
         public Agenda PostAgenda(ViewModelAgenda agenda)
         {
             var agendaRepository = new Agenda
@@ -30,6 +35,19 @@ namespace IClinicBot.Infra.SqlServer.Repositories.RepositoryConsultaContext
             _context.Agendas.Add(agendaRepository);
             _context.SaveChanges();
             return agendaRepository;
+        }
+
+        public bool DesmarcarAgenda(int idAgenda)
+        {
+            var agenda = GetbyIdAgenda(idAgenda);
+            if (agenda == null)
+            {
+                return false;
+            }
+            agenda.SeAtivado = false;
+            _context.Agendas.Update(agenda);
+            _context.SaveChanges();
+            return true;
         }
     }
 }

@@ -11,6 +11,7 @@ namespace IClinicBot.Infra.SqlServer.Interfaces.IRepositoryConsultaContext
     public interface IRepositoryAgenda
     {
         public List<Agenda> GetAllAgenda();
+        public bool DesmarcarAgenda(int idAgenda);
         public Agenda PostAgenda(ViewModelAgenda agenda);
     }
 }
