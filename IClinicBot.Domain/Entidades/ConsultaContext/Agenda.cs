@@ -15,6 +15,7 @@ namespace IClinicBot.Domain.ConsultaContext
         public int idAgenda { get; set; }
         public DateTime DataAgenda { get; set; }
         public DateTime RegistroAgenda { get; set; }
+        public bool SeAtivado { get; set; }
         public StatusAgenda Status {  get; set; }
 
         // Ligações:

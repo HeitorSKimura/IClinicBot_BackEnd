@@ -30,5 +30,12 @@ namespace IClinicBot.Application.API.Controllers.ControllerConsultaContext
             var retorno = _repositoryAgenda.PostAgenda(agenda);
             return Ok(retorno);
         }
+
+        [HttpPut]
+        public ActionResult<Agenda> PutColetor(int idAgenda)
+        {
+            _repositoryAgenda.DesmarcarAgenda(idAgenda);
+            return Ok("Agenda Desmarcada com Sucesso!!");
+        }
     }
 }
