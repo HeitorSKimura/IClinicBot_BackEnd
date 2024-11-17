@@ -22,6 +22,19 @@ namespace IClinicBot.Application.API.Controllers.ControllerCadastroContext
             return Ok(_repositoryMedico.GetAllMedico());
         }
 
+        [HttpGet("{email}")]
+        public IActionResult GetMedicoByEmail(string email)
+        {
+            try
+            {
+                return Ok(_repositoryMedico.GetMedicoByEmail(email));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
         [HttpPost]
         public ActionResult<Medico> Post(ViewModelMedico medico)
         {

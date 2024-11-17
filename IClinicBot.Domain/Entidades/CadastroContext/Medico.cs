@@ -13,5 +13,6 @@ namespace IClinicBot.Domain.CadastroContext
 
         public IList<Agenda> Agendas { get; set; }
         public IList<AgendaMedico> AgendasMedico { get; set; }
+        public IList<AgendaChatBot> AgendasChatBot { get; set; }
     }
 }

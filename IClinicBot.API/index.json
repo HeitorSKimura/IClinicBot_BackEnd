@@ -1,0 +1,1 @@
+{"schemaVersion":2,"mediaType":"application/vnd.oci.image.index.v1+json","manifests":[{"mediaType":"application/vnd.oci.image.manifest.v1+json","digest":"sha256:d16a78755d3a9ed8751a0b921a3d709613f95d672c6bc2df4c5d38d7b22c999f","size":1619,"annotations":{"io.containerd.image.name":"docker.io/library/iclinicbotapplicationapi:latest","org.opencontainers.image.ref.name":"latest"}}]}

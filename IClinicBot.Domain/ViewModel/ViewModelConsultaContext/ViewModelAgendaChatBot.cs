@@ -7,5 +7,7 @@
         public string Nome { get; set; }
         public string Especialidade { get; set; }
         public string FormaPagamento { get; set; }
+        public int idCadastro { get; set; }
+        public bool IsAtendido { get; set; }
     }
 }

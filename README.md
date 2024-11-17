@@ -8,6 +8,10 @@ Nosso Software tem como foco agilizar o atendimento em áreas da Saúde Hospitar
 ## 📊 Diagrama UML - Class
 ![Alt text](https://github.com/HeitorSKimura/IClinicBot_BackEnd/blob/main/IClinicBot_UML_Class.png)
 
+## Padrão de Projeto Aplicado - Builder
+
+![Builder](./img/Padrao_builder.png)
+
 ## 📌 Aplicativos Necessários:
 Visual Studio - https://visualstudio.microsoft.com/pt-br/downloads/ (Comunidade)
 <br/>

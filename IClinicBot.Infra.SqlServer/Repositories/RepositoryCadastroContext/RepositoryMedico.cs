@@ -1,4 +1,5 @@
 ﻿using IClinicBot.Domain.CadastroContext;
+using IClinicBot.Domain.ConsultaContext;
 using IClinicBot.Domain.ViewModel.CadastroContextViewModel;
 using IClinicBot.Infra.SqlServer.Interfaces.IRepositoryCadastroContext;
 using System;
@@ -23,6 +24,12 @@ namespace IClinicBot.Infra.SqlServer.Repositories.RepositoryCadastroContext
             return _context.Medicos.ToList();
         }
 
+        public Medico GetMedicoByEmail(string email)
+        {
+            return _context.Medicos.FirstOrDefault(a => a.Email == email);
+        }
+
+
         public Medico PostMedico(ViewModelMedico medico)
         {
             var medicoRepository = new Medico
@@ -32,6 +39,7 @@ namespace IClinicBot.Infra.SqlServer.Repositories.RepositoryCadastroContext
                 Email = medico.Email,
                 Senha = medico.Senha,
                 CRM = medico.CRM,
+                Role = "medico"
             };
 
             _context.Medicos.Add(medicoRepository);

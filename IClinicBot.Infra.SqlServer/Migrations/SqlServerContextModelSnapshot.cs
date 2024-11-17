@@ -118,11 +118,22 @@ namespace IClinicBot.Infra.SqlServer.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("IsAtendido")
+                        .HasColumnType("bit");
+
+                    b.Property<int?>("MedicoidCadastro")
+                        .HasColumnType("int");
+
                     b.Property<string>("Nome")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("idCadastro")
+                        .HasColumnType("int");
+
                     b.HasKey("idAgendaChatBot");
+
+                    b.HasIndex("MedicoidCadastro");
 
                     b.ToTable("AgendasChatBot");
                 });
@@ -410,6 +421,13 @@ namespace IClinicBot.Infra.SqlServer.Migrations
                     b.Navigation("Medico");
                 });
 
+            modelBuilder.Entity("IClinicBot.Domain.ConsultaContext.AgendaChatBot", b =>
+                {
+                    b.HasOne("IClinicBot.Domain.CadastroContext.Medico", null)
+                        .WithMany("AgendasChatBot")
+                        .HasForeignKey("MedicoidCadastro");
+                });
+
             modelBuilder.Entity("IClinicBot.Domain.ConsultaContext.AgendaMedico", b =>
                 {
                     b.HasOne("IClinicBot.Domain.CadastroContext.Medico", "Medico")
@@ -502,6 +520,8 @@ namespace IClinicBot.Infra.SqlServer.Migrations
             modelBuilder.Entity("IClinicBot.Domain.CadastroContext.Medico", b =>
                 {
                     b.Navigation("Agendas");
+
+                    b.Navigation("AgendasChatBot");
 
                     b.Navigation("AgendasMedico");
                 });
